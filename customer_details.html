@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Find Driver</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Fancy Sliding Form with jQuery" />
+        <meta name="keywords" content="jquery, form, sliding, usability, css3, validation, javascript"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="sliding.form.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        span.reference{
+            position:fixed;
+            left:5px;
+            top:5px;
+            font-size:10px;
+            text-shadow:1px 1px 1px #fff;
+        }
+        span.reference a{
+            color:#555;
+            text-decoration:none;
+			text-transform:uppercase;
+        }
+        span.reference a:hover{
+            color:#000;
+            
+        }
+        h1{
+            color:#ccc;
+            font-size:36px;
+            text-shadow:1px 1px 1px #fff;
+            padding:30px;
+        }
+    </style>
+    <body>
+	
+        <div id="content">
+           
+            <div id="wrapper" style="margin-top:10%">
+                <div id="steps">
+                    <form id="formElem" name="formElem" action="" method="post">
+                        <fieldset class="step">
+                            <legend>Customer Details</legend>
+							<p>
+                                <label name="select" for="user">User Registration:</label>
+                                <select name="user_registration_type">
+									<option>Professional</option>
+									<option>Businessman</option>
+									<option>Corporate</option>
+									<option>Online Logistics Comany</option>
+									<option>Material Handling Company</option>
+									<option>Automobile Company</option>
+									<option>Online Taxi Company</option>
+									<option>Transport Company </option>
+								</select>
+								
+                            </p>
+                            <p>
+                                <label for="name">Name:</label>
+                                <input id="name" name="name" type="name" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="dob">Date of Birth:</label>
+                                <input id="dob" name="dob" type="date" />
+                            </p>
+                            <p>
+                                <label for="address">Address:</label>
+                                <textarea name="address" class="form-control" rows="4" id="address" placeholder="Information"></textarea>
+                            </p>
+                            <p>
+                                <label for="city">City:</label>
+                                <input id="city" name="city" />
+                            </p>
+                            <p>
+                                <label for="pin">PIN:</label>
+                                <input id="number" name="pin" placeholder="PIN" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="sname">Police Station Name:</label>
+                                <input id="sname" name="police_station_name" type="sname" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="number">Contact No.</label>
+                                <input id="cnumber" name="phone" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="email">Email ID:</label>
+                                <input id="email" name="email" type="email" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="text">Nationalilty:</label>
+                                <input id="national" name="nationality" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="religion">Religion:</label>
+                                <input id="religion" name="religion" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="required">No. Of Drivers Required:</label>
+                                <input id="required" name="driver_required" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label name="type" for="type">Type Of Drivers Required:</label>
+                                <select name="type_of_driver_req">
+									<option>Innova</option>
+									<option>Honda</option>
+									<option>Marc</option>
+									<option>Mahendra X</option>
+									<option>Alto</option>
+									<option>W W</option>
+									<option>Jaguar</option>
+									<option>Deire</option>
+									<option>Audi</option>
+									<option>Altis</option>
+									<option>Tata 709 </option>
+								</select>
+								
+                            </p>
+							<p>
+                                <label for="Vehicles">Vehicles Experiences:</label>
+                                <input id="Vehicles" name="vehicle_name_exp" type="text" placeholder="Vehicles Name" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="year">Year Experiences:</label>
+                                <input id="year" name="vehicle_experience_year" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="pay">Expected Salary to Pay:</label>
+                                <input id="pay" name="expected_salary" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                	<input type="submit" name="submit" value="SEND"/>
+
+                            </p>
+                        </fieldset>
+						
+						
+							<?php
+		 $con=mysqli_connect("localhost","root","","driver");
+		
+		 if(isset($_POST['submit']))
+		 {
+		  $s=$_POST['select'];
+		  $b=$_POST['basic'];
+		  $n=$_POST['name'];
+		  $a=$_POST['address'];
+		 $c=$_POST['city'];
+		 $n=$_POST['number'];
+		 $s=$_POST['sname'];
+		 $c=$_POST['contact'];
+		 $e=$_POST['email'];
+		 $n=$_POST['nation'];
+		 $r=$_POST['religion'];
+		 $a=$_POST['age'];
+		 $r=$_POST['required'];
+		 $t=$_POST['type'];
+		 $v=$_POST['vehicles'];
+		 $y=$_POST['year'];
+		 $p=$_POST['pay'];
+		
+		 $qury="insert into find (`User_Registration`,`Basic_Information`,`Name`,`Complete_Address`,`City`,`PIN`,`Police_Station`,`Contact`,`Email`,`Nationalilty`,`Religion`,`Age`,`Required`,`Driver_type`,`Vehicles`,`Year`,`Pay`) values ('$s','$b','$n','$a','$c','$n','$s','$c','$e','$n','$r','$a','$r','$t','$v','$y','$p')"; 
+		 if (mysqli_query($con,$qury))
+		 {
+			 echo "value insert";
+			 
+		 }	 
+		
+		 
+		 }
+		 
+		 ?>
+						
+						
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

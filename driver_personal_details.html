@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Find Driver</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Fancy Sliding Form with jQuery" />
+        <meta name="keywords" content="jquery, form, sliding, usability, css3, validation, javascript"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="sliding.form.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        span.reference{
+            position:fixed;
+            left:5px;
+            top:5px;
+            font-size:10px;
+            text-shadow:1px 1px 1px #fff;
+        }
+        span.reference a{
+            color:#555;
+            text-decoration:none;
+			text-transform:uppercase;
+        }
+        span.reference a:hover{
+            color:#000;
+            
+        }
+        h1{
+            color:#ccc;
+            font-size:36px;
+            text-shadow:1px 1px 1px #fff;
+            padding:30px;
+        }
+    </style>
+    <body>
+	
+        <div id="content">
+           
+            <div id="wrapper" style="margin-top:10%">
+                <div id="steps">
+                    <form id="formElem" name="formElem" action="" method="post">
+                        <fieldset class="step">
+                            <legend>Driver Personal Details</legend>
+							<p>
+                                <label for="driverid">Driver ID:</label>
+                                <input id="driverid" name="driver_id" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="fathername">Father's Name:</label>
+                                <input id="fathername" name="father_name" type="name" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="mothername">Mother's Name:</label>
+                                <input id="mothername" name="mother_name" type="name" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="wifename">Wife's Name:</label>
+                                <input id="wifename" name="wife_name" type="name" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="sname">Police Station Name:</label>
+                                <input id="sname" name="police_station_name" type="sname" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="referencename">Reference Name:</label>
+                                <input id="refname" name="ref1_name" type="name" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="number">Contact No.</label>
+                                <input id="cnumber" name="ref1_phno" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="referencename">Reference Name:</label>
+                                <input id="refname" name="ref2_name" type="name" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="number">Contact No.</label>
+                                <input id="cnumber" name="ref2_phone" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="language">Languages Known:</label>
+                                <input id="language" name="Language" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="nationality">Nationality:</label>
+                                <input id="nationality" name="nationality" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="religion">Religion:</label>
+                                <input id="religion" name="religion" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label name="insurance" for="insurance">Insurance:</label>
+                                <select name="insurance">
+									<option>Select</option>
+									<option>Yes</option>
+									<option>No</option>
+								</select>
+							</p>
+							<p>
+                                <label name="hilly_area" for="hilly_area">Hilly Area:</label>
+                                <select name="hilly_area">
+									<option>Select</option>
+									<option>Yes</option>
+									<option>No</option>
+								</select>
+                            </p>
+							<p>
+                                <label name="allergy" for="allergy">Allergy:</label>
+                                <select name="allergy">
+									<option>Select</option>
+									<option>Yes</option>
+									<option>No</option>
+								</select>
+                            </p>
+							<p>
+                                <label name="disease" for="disease">Disease:</label>
+                                <select name="disease">
+									<option>Select</option>
+									<option>Yes</option>
+									<option>No</option>
+								</select>
+                            </p>
+							<p>
+                                <label for="bloodgroup">Blood Group:</label>
+                                <input id="bloodgroup" name="bloodgroup" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="height">Height:</label>
+                                <input id="height" name="height" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="weight">Weight:</label>
+                                <input id="weight" name="weight" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="bloodgroup">Blood Group:</label>
+                                <input id="bloodgroup" name="bloodgroup" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                        </fieldset>
+						
+						
+							<?php
+		 $con=mysqli_connect("localhost","root","","driver");
+		
+		 if(isset($_POST['submit']))
+		 {
+		  $s=$_POST['select'];
+		  $b=$_POST['basic'];
+		  $n=$_POST['name'];
+		  $a=$_POST['address'];
+		 $c=$_POST['city'];
+		 $n=$_POST['number'];
+		 $s=$_POST['sname'];
+		 $c=$_POST['contact'];
+		 $e=$_POST['email'];
+		 $n=$_POST['nation'];
+		 $r=$_POST['religion'];
+		 $a=$_POST['age'];
+		 $r=$_POST['required'];
+		 $t=$_POST['type'];
+		 $v=$_POST['vehicles'];
+		 $y=$_POST['year'];
+		 $p=$_POST['pay'];
+		
+		 $qury="insert into find (`User_Registration`,`Basic_Information`,`Name`,`Complete_Address`,`City`,`PIN`,`Police_Station`,`Contact`,`Email`,`Nationalilty`,`Religion`,`Age`,`Required`,`Driver_type`,`Vehicles`,`Year`,`Pay`) values ('$s','$b','$n','$a','$c','$n','$s','$c','$e','$n','$r','$a','$r','$t','$v','$y','$p')"; 
+		 if (mysqli_query($con,$qury))
+		 {
+			 echo "value insert";
+			 
+		 }	 
+		
+		 
+		 }
+		 
+		 ?>
+						
+						
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Rgister Driver</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Fancy Sliding Form with jQuery" />
+        <meta name="keywords" content="jquery, form, sliding, usability, css3, validation, javascript"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="sliding.form.js"></script>
+    </head>
+    <style>
+        span.reference{
+            position:fixed;
+            left:5px;
+            top:5px;
+            font-size:10px;
+            text-shadow:1px 1px 1px #fff;
+        }
+        span.reference a{
+            color:#555;
+            text-decoration:none;
+			text-transform:uppercase;
+        }
+        span.reference a:hover{
+            color:#000;
+            
+        }
+        h1{
+            color:#ccc;
+            font-size:36px;
+            text-shadow:1px 1px 1px #fff;
+            padding:20px;
+        }
+    </style>
+    <body>
+        <div>
+            
+        </div>
+        <div id="content">
+            <h1>Driver Professional Details</h1>
+            <div id="wrapper">
+                <div id="steps">
+                    <form id="formElem" name="formElem" action="" method="post">
+                        <fieldset class="step">
+                            <legend>Professional Details</legend>
+							<p>
+                                <label for="driverid">Driver ID:</label>
+                                <input id="driverid" name="driver_id" type="number" AUTOCOMPLETE=OFF />
+								
+                            </p>
+                            <p>
+                                <label for="name">Passport Name:</label>
+                                <input id="passport" name="pass_name" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="number">Passport No.</label>
+                                <input id="number" name="passport_no" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="place">Place Of Issue:</label>
+                                <input id="place" name="pass_issue_place" placeholder="Place Name" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="website">Issue Date:</label>
+                               <input type="date" name="pass_issue_date" class="form-control" id="date" placeholder="Date">
+                            </p>
+							<p>
+                                <label for="website">Valid Date:</label>
+                               <input type="date" name="pass_valid_date" class="form-control" id="date" placeholder="Date">
+                            </p>
+							<p>
+                                <label for="number">Licence No.</label>
+                                <input id="number" name="license_no" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="website">Issue Date:</label>
+                               <input type="date" name="lic_issue_date" class="form-control" id="date" placeholder="Date">
+                            </p>
+							<p>
+                                <label for="website">Valid Date:</label>
+                               <input type="date" name="lic_valid_date" class="form-control" id="date" placeholder="Date">
+                            </p>
+                            <p>
+                                <label for="text">Issuing Authority:</label>
+                                <input id="text" name="issue_authority" type="text" placeholder="Authority" AUTOCOMPLETE=OFF />
+                            </p>                            
+							<p>
+                                <label for="licencetype">Licence Issued Vehical Type:</label>
+                                <select id="licencetype" name="lic_vehicle_type">
+                                    <option>Bike</option>
+                                    <option>Three Wheeler</option>
+									 <option>Light Four Wheeler</option>
+									 <option>Heavy Four Wheeler Commercial</option>
+									 <option>Muli Four Wheeler Commercial</option>
+									 <option>  Heavy Equipment Commercial</option>
+                                </select>
+                            </p>
+							<p>
+                                <label for="licencetype">Licence Type:</label>          
+                                <select id="licencetype" name="lic_type">
+                                    <option>Individual</option>
+                                    <option>Personal</option>
+									 <option>Commercial</option>
+									 <option> Yellow Badge</option>
+                                </select>
+                            </p>
+							<p>
+                                <label for="job">Job Want For:</label>          
+                                <select id="job" name="job">
+                                    <option>Full Time</option>
+                                    <option>Part Time</option>
+									 <option>Per Trip Basis  </option>
+                                </select>
+                            </p>
+							<p>
+                                <label for="type">Type Of Drivers Required:</label>
+                                <select id="type" name="type_driver_req">
+									<option>Innova</option>
+									<option>Honda</option>
+									<option>Marc</option>
+									<option>Mahendra X</option>
+									<option>Alto</option>
+									<option>W W</option>
+									<option>Jaguar</option>
+									<option>Deire</option>
+									<option>Audi</option>
+									<option>Altis</option>
+									<option>Tata 709 </option>
+								</select>
+								
+                            </p>
+							<p>
+                                <label for="Vehicles">Vehicles Experiences:</label>
+                                <input id="Vehicles" name="veh_exp" type="text" placeholder="Vehicles Name" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="year">Total Years Of Experiences:</label>
+                                <input id="year" name="exp_details" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="salary">Salary Drawn:</label>
+                               <input type="number" name="salary_drawn" class="salary" id="salary" placeholder="Salary">
+                            </p>
+							 <p>
+                                <label for="expected">Salary Expected: </label>
+                               <input type="number" name="sal_exp" class="expected" id="expected" placeholder="Salary Expected">
+                            </p>
+                            <p>
+                                <label for="Education">Education Qualification:</label>
+                                <input id="Education" name="qualification" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            
+							<p>
+                                <label for="Identification">Adhar Card Number:  </label>
+                                <input id="Identification" name="aadhar_no" type="number" placeholder="Adhar Card No." AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="Identification">Pan Card Number:  </label>
+                                <input id="Identification" name="pan_card" type="number" placeholder="Adhar Card No." AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="photo">Photograph:  </label>
+                                <input id="photo" name="photo" type="file" />
+                            </p>
+                        </fieldset>
+						
+						
+						
+						<?php
+		 $con=mysqli_connect("localhost","root","","driver");
+		
+		 if(isset($_POST['submit']))
+		 {
+		  $n=$_POST['name'];
+		  $a=$_POST['address'];
+		  $t=$_POST['type'];
+		  $m=$_POST['mname'];
+		 $c=$_POST['city'];
+		 $n=$_POST['number'];
+		 $s=$_POST['sname'];
+		 $c=$_POST['contact'];
+		 $e=$_POST['email'];
+		 $n=$_POST['nation'];
+		 $r=$_POST['religion'];
+		 $a=$_POST['age'];
+		 $r=$_POST['required'];
+		 $t=$_POST['type'];
+		 $v=$_POST['vehicles'];
+		 $y=$_POST['year'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		
+		 $qury="insert into find (`Name`,`Address`,`Releation`,`Mother_Name`,`City`,`PIN`,`Police_Station`,`Contact`,`Email`,`Nationalilty`,`Religion`,`Age`,`Required`,`Driver_type`,`Vehicles`,`Year`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`) values ('$n','$a','$t','$m','$c','$n','$s','$c','$e','$n','$r','$a','$r','$t','$v','$y','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p')"; 
+		 if (mysqli_query($con,$qury))
+		 {
+			 echo "value insert";
+			 
+		 }	 
+		
+		 
+		 }
+		 
+		 ?>
+						
+						
+						
+						
+						
+                    </form>
+                </div>
+                <div id="navigation" style="display:none;">
+                    <ul>
+                        <li class="selected">
+                            <a href="#">Register</a>
+                        </li>
+                        <li>
+                            <a href="#">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#">Register</a>
+                        </li>
+                        <li>
+                            <a href="#">Submit</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
