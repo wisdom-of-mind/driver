@@ -1,0 +1,549 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Rgister Driver</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Fancy Sliding Form with jQuery" />
+        <meta name="keywords" content="jquery, form, sliding, usability, css3, validation, javascript"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="sliding.form.js"></script>
+    </head>
+    <style>
+        span.reference{
+            position:fixed;
+            left:5px;
+            top:5px;
+            font-size:10px;
+            text-shadow:1px 1px 1px #fff;
+        }
+        span.reference a{
+            color:#555;
+            text-decoration:none;
+			text-transform:uppercase;
+        }
+        span.reference a:hover{
+            color:#000;
+            
+        }
+        h1{
+            color:#ccc;
+            font-size:36px;
+            text-shadow:1px 1px 1px #fff;
+            padding:20px;
+        }
+    </style>
+    <body>
+        <div>
+            
+        </div>
+        <div id="content">
+            <h1>Rgister Driver</h1>
+            <div id="wrapper">
+                <div id="steps">
+                    <form id="formElem" name="formElem" action="" method="post">
+                        <fieldset class="step">
+                            <legend>Rgister Driver</legend>
+							<p>
+                                <label for="name">Name:</label>
+                                <input id="name" name="name" type="name" AUTOCOMPLETE=OFF />
+								
+                            </p>
+							<p>
+                                <label for="address">Address</label>
+                                <textarea name="name" class="form-control" rows="2" id="address" placeholder="Address"></textarea>
+                            </p>
+                            <p>
+                                <label for="type">Releation:</label>
+                                <select name="type">
+									<option>Friends</option>
+									<option>Relatives</option>
+								</select>
+								
+                            </p>
+                            <p>
+                                <label for="mname">Mother Name:</label>
+      <input type="mname" class="form-control" id="name" placeholder="Name">
+	
+    
+<input id="age" name="mage" placeholder="Age" type="number" style="margin-left:175px" AUTOCOMPLETE=OFF />
+	<textarea name="moccupation" class="form-control" rows="2" id="address" placeholder="Occupation" style="margin-left:175px; margin-top:10px" ></textarea>
+                            </p>
+							<p>
+                                <label for="mname">Father Name:</label>
+      <input type="name" class="form-control" id="name" placeholder="Name">
+	
+      <label><input type="radio" name="sex" value="male">Male</label>
+    
+	
+      <label><input type="radio" name="sex" value="female">Female</label>
+    
+<input id="age" name="number" placeholder="Age" type="number" style="margin-left:175px" AUTOCOMPLETE=OFF />
+	<textarea class="form-control" rows="2" id="address" placeholder="Occupation" style="margin-left:175px; margin-top:10px" ></textarea>
+                            </p>
+							<p>
+                                <label for="mname">Wife Name:</label>
+      <input type="name" class="form-control" id="name" placeholder="Name">
+	
+      <label><input type="radio" name="sex" value="male">Male</label>
+    
+	
+      <label><input type="radio" name="sex" value="female">Female</label>
+    
+<input id="age" name="number" placeholder="Age" type="number" style="margin-left:175px" AUTOCOMPLETE=OFF />
+	<textarea class="form-control" rows="2" id="address" placeholder="Occupation" style="margin-left:175px; margin-top:10px" ></textarea>
+                            </p>
+							<p>
+                                <label for="mname">Kid1 Name:</label>
+      <input type="name" class="form-control" id="name" placeholder="Name">
+	
+      <label><input type="radio" name="sex" value="male">Male</label>
+    
+	
+      <label><input type="radio" name="sex" value="female">Female</label>
+    
+<input id="age" name="number" placeholder="Age" type="number" style="margin-left:175px" AUTOCOMPLETE=OFF />
+	<textarea class="form-control" rows="2" id="address" placeholder="Occupation" style="margin-left:175px; margin-top:10px" ></textarea>
+                            </p>
+							<p>
+                                <label for="mname">Kid2 Name:</label>
+      <input type="name" class="form-control" id="name" placeholder="Name">
+	
+      <label><input type="radio" name="sex" value="male">Male</label>
+    
+	
+      <label><input type="radio" name="sex" value="female">Female</label>
+    
+<input id="age" name="number" placeholder="Age" type="number" style="margin-left:175px" AUTOCOMPLETE=OFF />
+	<textarea class="form-control" rows="2" id="address" placeholder="Occupation" style="margin-left:175px; margin-top:10px" ></textarea>
+                            </p>
+                            <p>
+                                <label for="language">Language Fluently Speak:</label>
+                                <input id="language" name="city" type="text"placeholder="Language Name"  />
+                            </p>
+                            <p>
+                                <label for="write">Language Write:</label>
+                                <input id="write" name="write" placeholder="Language Name" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="text">I</label>
+                                <input id="text" name="text" type="text" AUTOCOMPLETE=OFF />given above details are true and correct.
+                            </p>
+                        </fieldset>
+                        <fieldset class="step">
+                            <legend>Professional Details</legend>
+                            <p>
+                                <label for="name">Passport Name:</label>
+                                <input id="passport" name="name" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="number">Passport No.</label>
+                                <input id="number" name="number" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="place">Place Of Issue:</label>
+                                <input id="place" name="place" placeholder="Place Name" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="website">Issue Date:</label>
+                               <input type="date" class="form-control" id="date" placeholder="Date">
+                            </p>
+							<p>
+                                <label for="website">Valid Date:</label>
+                               <input type="date" class="form-control" id="date" placeholder="Date">
+                            </p>
+							<p>
+                                <label for="number">Licence No.</label>
+                                <input id="number" name="number" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="website">Issue Date:</label>
+                               <input type="date" class="form-control" id="date" placeholder="Date">
+                            </p>
+							<p>
+                                <label for="website">Valid Date:</label>
+                               <input type="date" class="form-control" id="date" placeholder="Date">
+                            </p>
+                            <p>
+                                <label for="text">Issuing Authority:</label>
+                                <input id="text" name="issuing" type="text" placeholder="Authority" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="city">Issuing City:</label>
+                                <input id="city" name="city" placeholder="City Name" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="licencetype">Licence Issued Vehical Type:</label>
+                                <select id="licencetype" name="licencetype">
+                                    <option>Bike</option>
+                                    <option>Three Wheeler</option>
+									 <option>Light Four Wheeler</option>
+									 <option>Heavy Four Wheeler Commercial</option>
+									 <option>Muli Four Wheeler Commercial</option>
+									 <option>  Heavy Equipment Commercial</option>
+                                </select>
+                            </p>
+							<p>
+                                <label for="licencetype">Licence Type:</label>          
+                                <select id="licencetype" name="licencetype">
+                                    <option>Individual</option>
+                                    <option>Personal</option>
+									 <option>Commercial</option>
+									 <option> Yello Badge</option>
+                                </select>
+                            </p>
+							<p>
+                                <label for="job">Job Want For:</label>          
+                                <select id="job" name="job">
+                                    <option>Full Time</option>
+                                    <option>Part Time</option>
+									 <option>Per Trip Basis  </option>
+                                </select>
+                            </p>
+							<p>
+                                <label for="type">Type Of Drivers Required:</label>
+                                <select>
+									<option>Innova</option>
+									<option>Honda</option>
+									<option>Marc</option>
+									<option>Mahendra X</option>
+									<option>Alto</option>
+									<option>W W</option>
+									<option>Jaguar</option>
+									<option>Deire</option>
+									<option>Audi</option>
+									<option>Altis</option>
+									<option>Tata 709 </option>
+								</select>
+								
+                            </p>
+							<p>
+                                <label for="Vehicles">Vehicles Experiences:</label>
+                                <input id="Vehicles" name="Vehicles" type="text" placeholder="Vehicles Name" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="year">Total Years Of Experiences:</label>
+                                <input id="year" name="year" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="salary">Salary Drawn:</label>
+                               <input type="number" class="salary" id="salary" placeholder="Salary">
+                            </p>
+							 <p>
+                                <label for="expected">Salary Expected: </label>
+                               <input type="number" class="expected" id="expected" placeholder="Salary Expected">
+                            </p>
+							<p>
+                                <label for="mention">Mention at least last 2driving Experiences Refence Name:</label>
+                               <input type="text" class="form-control" id="mention" placeholder="Enter Name">
+                            </p>
+							<p>
+                                <label for="name">Name:</label>
+                               <input type="name" class="name" id="name">
+                            </p>
+							<p>
+                                <label for="address">1 Address:</label>
+                                <textarea class="form-control" rows="2" id="address" placeholder="Address"></textarea>
+                            </p>
+							 <p>
+                                <label for="phone">Phone No.</label>
+                               <input type="phone" class="phone" id="phone">
+                            </p>
+							<p>
+                                <label for="name">Name:</label>
+                               <input type="name" class="name" id="name">
+                            </p>
+							<p>
+                                <label for="address">2 Address:</label>
+                                <textarea class="form-control" rows="2" id="address" placeholder="Address"></textarea>
+                            </p>
+							 <p>
+                                <label for="phone">Phone No.</label>
+                               <input type="phone" class="phone" id="phone">
+                            </p>
+							<p>
+                                <label for="refence">Two Know Refence other than driving refence:</label>
+                                <textarea class="form-control" rows="2" id="refence" placeholder="Refence"></textarea>
+                            </p>
+                        </fieldset>
+                        <fieldset class="step">
+                            <legend>Register</legend>
+                            <p>
+                                <label for="experiences">Experiences:</label>
+								<label for="experiences">I am professional Driver would like to registred myself.</label>
+                                
+                            </p>
+                            <p>
+                                <label for="name">Name:</label>
+                                <input id="name" name="name" type="name" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="surname">SurName:</label>
+                                <input id="surname" name="surname" type="surname" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="name"> First Name:</label>
+                                <input id="name" name="name" type="name" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="name">Middle Name:</label>
+                                <input id="name" name="name" type="name" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="address">Address:</label>
+                                <textarea class="form-control" rows="2" id="address" placeholder="Refence"></textarea>
+                            </p>
+							<p>
+                                <label for="city">City:</label>
+                                <input id="city" name="city" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="pin">PIN:</label>
+                                <input id="pin" name="pin" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="station">Police Station Name:</label>
+                                <input id="station" name="station" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="address">Parmanent Address:</label>
+                                <textarea class="form-control" rows="2" id="address" placeholder="Refence"></textarea>
+                            </p>
+							<p>
+                                <label for="city">City:</label>
+                                <input id="city" name="city" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="pin">PIN:</label>
+                                <input id="pin" name="pin" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="station">Police Station Name:</label>
+                                <input id="station" name="station" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="email">Email ID:</label>
+                                <input id="email" name="email" type="email" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="Education">Education Qualification:</label>
+                                <input id="Education" name="Education" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="Health">Health Information:</label>
+                                <input id="Health" name="Health" type="text" placeholder="Height" AUTOCOMPLETE=OFF />
+                                <input id="Health" name="Health" type="text" placeholder="Weight" style="margin-top:10px; margin-left:175px" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="Blood">Blood Group:</label>
+                                <input id="Blood" name="Blood" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="Illness">Any Serious Illness if any in past:</label>
+                                <input id="Illness" name="Illness" type="text" placeholder="When" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="Serious">Any Serious Desease: </label>
+                                <input id="Serious" name="Serious" type="text" placeholder="Name Of Desease" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="Date">Date of Birth:</label>
+                                <input id="date" name="date" type="date" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="Graduate">Graduate:</label>
+                                <select>
+									<option>Commerce</option>
+									<option>Arts</option>
+									<option>Science</option>
+								</select>
+								
+                            </p>
+                            <p>
+                                <label for="Pass">Year of Pass: </label>
+                                <input id="Pass" name="Pass" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="Pass">Gender:</label>
+                                <label><input type="radio" name="sex" value="male">Male</label>
+                                <label  style="margin-left:190px"><input type="radio" name="sex" value="female">Female</label>
+	                        </p>	
+	                        <p>
+                                <label for="Cast">Cast:</label>
+                                <select>
+									<option>ST</option>
+									<option>SC</option>
+									<option>OBC</option>
+									<option>Brahmin</option>
+									<option>General</option>
+								</select>
+								
+                            </p>
+							<p>
+                                <label for="Nationalilty: ">Nationalilty: : </label>
+                                <input id="Nationalilty: " name="Nationalilty: " type="text" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="Religion">Religion:</label>
+                                <input id="Religion" name="Religion" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="Identification">Identification:  </label>
+                                <input id="Identification" name="Identification" type="number" placeholder="Adhar Card No." AUTOCOMPLETE=OFF />
+                                <input id="Identification" name="Identification" type="number"placeholder="Ration Card No." style="margin-top:10px; margin-left:175px" AUTOCOMPLETE=OFF />
+                            </p>
+							<p>
+                                <label for="Place">Place Of Issue: </label>
+                                <input id="Place" name="Place" type="text" placeholder="Place" AUTOCOMPLETE=OFF />
+                            </p>
+                        </fieldset>
+						
+						
+						
+						<?php
+		 $con=mysqli_connect("localhost","root","","driver");
+		
+		 if(isset($_POST['submit']))
+		 {
+		  $n=$_POST['name'];
+		  $a=$_POST['address'];
+		  $t=$_POST['type'];
+		  $m=$_POST['mname'];
+		 $c=$_POST['city'];
+		 $n=$_POST['number'];
+		 $s=$_POST['sname'];
+		 $c=$_POST['contact'];
+		 $e=$_POST['email'];
+		 $n=$_POST['nation'];
+		 $r=$_POST['religion'];
+		 $a=$_POST['age'];
+		 $r=$_POST['required'];
+		 $t=$_POST['type'];
+		 $v=$_POST['vehicles'];
+		 $y=$_POST['year'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		 $p=$_POST['pay'];
+		
+		 $qury="insert into find (`Name`,`Address`,`Releation`,`Mother_Name`,`City`,`PIN`,`Police_Station`,`Contact`,`Email`,`Nationalilty`,`Religion`,`Age`,`Required`,`Driver_type`,`Vehicles`,`Year`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`,`Pay`) values ('$n','$a','$t','$m','$c','$n','$s','$c','$e','$n','$r','$a','$r','$t','$v','$y','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p','$p')"; 
+		 if (mysqli_query($con,$qury))
+		 {
+			 echo "value insert";
+			 
+		 }	 
+		
+		 
+		 }
+		 
+		 ?>
+						
+						
+						
+						
+						
+                    </form>
+                </div>
+                <div id="navigation" style="display:none;">
+                    <ul>
+                        <li class="selected">
+                            <a href="#">Register</a>
+                        </li>
+                        <li>
+                            <a href="#">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#">Register</a>
+                        </li>
+                        <li>
+                            <a href="#">Submit</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
